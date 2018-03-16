@@ -64,4 +64,4 @@ def main():
     # emit a dockerfile
     print('FROM nginx')
     print('RUN sed -i -e \'s|default_type  application/octet-stream;|default_type text/html;|g\' /etc/nginx/nginx.conf')
-    print("COPY %s /usr/share/nginx/html/" % fqdn)
+    print("COPY %s/ /usr/share/nginx/html/" % fqdn)
